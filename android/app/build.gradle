@@ -1,0 +1,49 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'kh.gov.mrd.roadfurniture'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "kh.gov.mrd.roadfurniture"
+        minSdk 24
+        targetSdk 34
+        // CI passes -PversionCode=<run number> so each build installs over the last
+        versionCode project.hasProperty('versionCode') ? project.versionCode.toInteger() : 1
+        versionName project.hasProperty('versionName') ? project.versionName : "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file(MRD_STORE_FILE)
+            storePassword MRD_STORE_PASSWORD
+            keyAlias MRD_KEY_ALIAS
+            keyPassword MRD_KEY_PASSWORD
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    // WebViewAssetLoader — serves the app's own files over an https:// origin so
+    // the browser treats them as secure: geolocation and localStorage both need that.
+    implementation 'androidx.webkit:webkit:1.11.0'
+    implementation 'androidx.core:core:1.13.1'
+}

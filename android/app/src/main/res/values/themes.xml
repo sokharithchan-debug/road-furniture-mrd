@@ -1,0 +1,8 @@
+<resources>
+    <!-- No action bar: the page draws its own header -->
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper</item>
+        <item name="android:statusBarColor">#1C2C5E</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

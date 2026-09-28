@@ -1,0 +1,5 @@
+<resources>
+    <!-- the deep navy of the ministry ribbon, used behind the launcher icon -->
+    <color name="ic_launcher_background">#1C2C5E</color>
+    <color name="paper">#F4F6FA</color>
+</resources>

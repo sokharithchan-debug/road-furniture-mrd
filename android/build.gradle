@@ -1,0 +1,5 @@
+// Top-level build file. The Android plugin version is pinned so a CI build a
+// year from now produces the same APK as one today.
+plugins {
+    id 'com.android.application' version '8.5.2' apply false
+}
