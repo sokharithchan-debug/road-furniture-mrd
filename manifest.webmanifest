@@ -1,0 +1,18 @@
+{
+  "name": "កម្មវិធីស្រង់ទិន្នន័យបរិក្ខារចរាចរណ៍ — MRD",
+  "short_name": "បរិក្ខារចរាចរណ៍",
+  "description": "ការស្រង់ទិន្នន័យផ្លាកសញ្ញាចរាចរណ៍ និងរបាំងការពារផ្លូវ តាមចំណុច គ.ម — នាយកដ្ឋានអភិវឌ្ឍន៍ហេដ្ឋារចនាសម្ព័ន្ធផ្លូវជនបទ",
+  "lang": "km",
+  "dir": "ltr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F4F6FA",
+  "theme_color": "#1C2C5E",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
